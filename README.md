@@ -5,6 +5,7 @@
   - [Folder format](#folder-format)
   - [Config.md](#configmd)
   - [Problems.md](#problemsmd)
+  - [Sample Tree](#sample-tree)
 
 ## Node Name
 - Unique, choose between
@@ -73,4 +74,16 @@ This  is stuff
 ## This is the solution
 
 This  is stuff
+```
+
+## Sample Tree
+
+```md
+## Serverless
+
+| 🗂️ AWS | IAM    |
+| ------- | ------ |
+|         | S3     |
+|         | Lambda |
+
 ```
