@@ -1,4 +1,5 @@
 # ZirconMD - Type 0
+A mindmapping (or mindtreeing) workflow. Compatible with all types 1,2,etc!
 
 - [ZirconMD - Type 0](#zirconmd---type-0)
   - [Node Name](#node-name)
