@@ -14,10 +14,9 @@
 ---
 tags:
   - aws
-  - blog
-  - me
-  - "#test"
+  - aws-account
 description: some optional description
+delims: "#,##,###,**solution:**"
 ---
 
 # Note Header 
