@@ -1,16 +1,40 @@
 # ZirconMD - Type 0
 
 - [ZirconMD - Type 0](#zirconmd---type-0)
+  - [Single File Type](#single-file-type)
   - [Node Name](#node-name)
   - [Folder format](#folder-format)
   - [Config.md](#configmd)
   - [Problems.md](#problemsmd)
   - [Sample Tree](#sample-tree)
 
+## Single File Type
+
+```markdown
+---
+tags:
+  - aws
+  - blog
+  - me
+  - "#test"
+description: some optional description
+---
+
+# Note Header 
+
+## Notes
+
+# Problem Header
+
+## Problem Group
+
+### Problem Title
+
+#### Problem Solution
+```
+
 ## Node Name
-- Unique, choose between
-  - Epoch seconds
-  - UUID v4
+- Just a unique name
 
 ## Folder format
 ```
@@ -21,14 +45,14 @@
 │   │   │   ├── sql_database/ //Phase 1
 │   │   │   ├── config.txt
 │   │   │   ├── file_metadata.csv // Phase 1
-│   │   │   ├── index.md
+│   │   │   ├── entryPointFromConfig.md
 │   │   │   ├── notes/ 
-│   │   │   │   ├── 1736805554.md
-│   │   │   │   ├── 1736805555.md
+│   │   │   │   ├── n1.md
+│   │   │   │   ├── n2.md
 │   │   │   │   └── ...
 │   │   │   └── problems/
-│   │   │       ├── 1736805552.md
-│   │   │       ├── 1736805553.md
+│   │   │       ├── p1.md
+│   │   │       ├── p2.md
 │   │   │       └── ...
 │   │   ├── node2/
 │   │   ├── node3/
@@ -46,10 +70,11 @@
 ## Config.md
 
 ```md
-name: "Cloudwatch alarms"
+entry: [AWS Account Basics](AWS%20Account%20Basics.md)
 description: "My description"
 tags: #tag1 #multi-word-tag
-index: [index](path/to/index.md)
+related_concepts: +related1, +related2
+id: 1736924062
 ```
 
 ## Problems.md
@@ -57,23 +82,13 @@ index: [index](path/to/index.md)
 ```md
 <See Metadata Tags>
 
-## This is the question
+# Problem Header
 
-This  is stuff
+## Problem Group
 
-## This is the solution
+### Problem Title
 
-This  is stuff
-
-~~ 
-
-## This is the question
-
-This  is stuff
-
-## This is the solution
-
-This  is stuff
+#### Problem Solution
 ```
 
 ## Sample Tree
